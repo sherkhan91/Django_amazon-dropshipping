@@ -31,6 +31,8 @@ from Logging_Program import myLogger
 class RakutenOrder():
 	
 	def __init__(self, logger):
+		""" test variable can be removed, its just for git pushing """
+		self.test = "This is a test variable"
 		self.logger = logger
 		self.Queries = DatabaseQueries(logger=self.logger)
 		self.Utils = MarketPlaceUtils()

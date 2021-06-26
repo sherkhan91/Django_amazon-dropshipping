@@ -1,5 +1,6 @@
 import requests
 
+""" This is the file where we will store constants related to all the marketplaces """
 class Constants(object):
 
     '''Constant urls and proxy settings for marketplace, change accordingly when needed'''
@@ -38,6 +39,7 @@ class Constants(object):
     mpassword ="database_password"
     mport  = "13526"
 
+    """ this one has has been added for multi account settings """
     testingaccounts = {
                 "accounts":[
                                 {
@@ -60,25 +62,25 @@ class Constants(object):
                                                         "proxy":proxysetting
                                                         }
                                                 },
-                                    # "catalog2":{
-                                    #             "cdiscount2":
-                                    #                     {
-                                    #                     "username":"mymdin26-api",
-                                    #                     "password":"Aqwzsxedc26.",
-                                    #                     "proxy":proxysetting
-                                    #                     },
-                                    #             "rakuten2":
-                                    #                     {
-                                    #                     "username":"MDINpro",
-                                    #                     "password":"e7b2d30e33c34259a362759c010bfb9e",
-                                    #                     "proxy":proxysetting
-                                    #                     },
-                                    #             "worten2":
-                                    #                     {
-                                    #                     "shopkey":'2e87de07-6009-44ab-aaa5-84005c2b95e5',
-                                    #                     "proxy":proxysetting
-                                    #                     }
-                                    #             }      
+                                    "catalog2":{
+                                                "cdiscount2":
+                                                        {
+                                                        "username":"mymdin26-api",
+                                                        "password":"Aqwzsxedc26.",
+                                                        "proxy":proxysetting
+                                                        },
+                                                "rakuten2":
+                                                        {
+                                                        "username":"MDINpro",
+                                                        "password":"e7b2d30e33c34259a362759c010bfb9e",
+                                                        "proxy":proxysetting
+                                                        },
+                                                "worten2":
+                                                        {
+                                                        "shopkey":'2e87de07-6009-44ab-aaa5-84005c2b95e5',
+                                                        "proxy":proxysetting
+                                                        }
+                                                }      
                                 }
                             ]
                         }

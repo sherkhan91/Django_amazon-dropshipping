@@ -20,7 +20,7 @@ from utils import MarketPlaceUtils
 from inspect import currentframe
 
 
-
+""" This program fetches the discussions from cdiscount marketplace and save them into database """
 class CdiscountDiscussions():
 
 	def __init__(self, logger):
