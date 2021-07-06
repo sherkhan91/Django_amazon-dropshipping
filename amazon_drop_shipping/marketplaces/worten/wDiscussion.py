@@ -69,6 +69,14 @@ class WortenDiscussions():
 		}
 		'''
 		return data
+	
+	#TODO: remove this function!
+	def doaprintfaltu(self):
+		print("just adding these lines to see change on git")
+
+	#TODO: remove this function!
+	def tryexceptfaltu(self):
+		print("this is a blah blah print function")
 
 	def retrieveThreadWorten(self, threadID):
 

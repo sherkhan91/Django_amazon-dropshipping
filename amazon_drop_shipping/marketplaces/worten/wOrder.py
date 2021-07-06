@@ -45,6 +45,13 @@ class WortenOrder():
 		''' for getting the file name for logger '''
 		return sys.argv[0]
 
+	#TODO: remove this function!
+	def doaprintfaltu(self):
+		print("just adding these lines to see change on git")
+
+	#TODO: remove this function!
+	def tryexceptfaltu(self):
+		print("this is a blah blah print function")
 
 	def get_line(self):
 		''' for getting the line number for later logging  '''
@@ -54,7 +61,12 @@ class WortenOrder():
 	def formatDate(self,date_string):
 		'''format date for worten '''
 		return date_string[:10]
+
+	#TODO: remove this function!
+	def functionfaltu(self):
+		faltu_string = "Display the given set of images, optionally with titles.images: list or array of image tensors in HWC format.."
 	
+
 	def worten_mock_data(self):
 		mock_data = """{
 				"orders": [{

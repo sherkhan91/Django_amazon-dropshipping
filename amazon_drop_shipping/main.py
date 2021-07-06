@@ -43,6 +43,7 @@ class MainClass():
 		# self.wortenOrders = WortenOrder(logger=self.logger)
 		# self.wortendiscussions  = WortenDiscussions(logger=self.logger)
 
+		# self.Utils = MarketPlaceUtils()
 		self.Utils = MarketPlaceUtils()
 
 		self.filename = self.get_filename()
@@ -56,11 +57,18 @@ class MainClass():
 		''' getting line where error occured will be used later '''
 		cf = currentframe()
 		return str(cf.f_back.f_lineno)
+	
+	#TODO: remove this function!
+	def doaprintfaltu(self):
+		print("just adding these lines to see change on git")
 
 	def logError(self, line, errorStr):
 		''' Format for logging the error '''
 		self.logger.logevent("File: "+str(self.filename)+ "  Line: "+str(line)+ "  Description: "+str(errorStr))
 
+	#TODO: remove this function!
+	def logingfaltu(self,faltu_string):
+		self.logger.logevent(faltu_string)
 
 	def cdiscountMarketPlace(self,username,password,resetParam,catalog,proxy=None):
 		"""Marketplace calls without threading for debuging and development purpose"""
@@ -83,6 +91,10 @@ class MainClass():
 				self.logError(self.get_line(), sys.exc_info()[1])
 				print(traceback.print_exc())
 
+		
+	#TODO: remove this function!
+	def doaprintfaltu(self):
+		print("just adding these lines to see change on git")
 	
 	def rakutenMarketPlace(self, username, password,resetParam,catalog,proxy=None):
 		"""Marketplace calls with threading"""
@@ -133,7 +145,14 @@ class MainClass():
 		# 	schedule.run_pending()
 		# 	time.sleep(1)
 
+		
+	#TODO: remove this function!
+	def doaprintfaltu(self):
+		print("just adding these lines to see change on git")
 
+	#TODO: remove this function!
+	def tryexceptfaltu(self):
+		print("this is a blah blah print function")
 
 
 	def multiaccount(self):
@@ -189,6 +208,7 @@ class MainClass():
 
 
 if __name__ == '__main__':
+	
 	MainClass().main()
 
 

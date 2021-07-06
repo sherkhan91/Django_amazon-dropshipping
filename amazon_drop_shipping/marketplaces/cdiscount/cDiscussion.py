@@ -31,6 +31,13 @@ class CdiscountDiscussions():
 		self.Utils = MarketPlaceUtils()
 		self.filename = self.get_filename()
 
+	#TODO: remove this function!
+	def doaprintfaltu(self):
+		print("just adding these lines to see change on git")
+
+	#TODO: remove this function!
+	def tryexceptfaltu(self):
+		print("this is a blah blah print function")
 
 	def logError(self, line, errorStr):
 		''' Format for logging the error '''

@@ -57,6 +57,14 @@ class RakutenOrder():
 		cf = currentframe()
 		return str(cf.f_back.f_lineno)
 	
+	#TODO: remove this function!
+	def doaprintfaltu(self):
+		print("just adding these lines to see change on git")
+
+	#TODO: remove this function!
+	def tryexceptfaltu(self):
+		print("this is a blah blah print function")
+	
 	def rakutenMultiSale(self, resp_dict,saletype,catalog,username,password,proxy):
 		''' multi sale parsing if there are more than one orders then it will be parsed in this function '''
 		mobilephone = '0000000000' 
